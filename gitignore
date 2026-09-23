@@ -1,0 +1,65 @@
+# ==============================
+# Environment variables (all services)
+# ==============================
+.env
+.env.local
+.env.*.local
+!*.env.example
+
+# ==============================
+# Frontend — Node / Next.js
+# ==============================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.turbo/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+frontend/coverage/
+
+# ==============================
+# Backend — Java / Spring Boot / Maven
+# ==============================
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/*.class
+backend/*.jar
+backend/*.war
+backend/HELP.md
+backend/.gradle/
+backend/build/
+
+# ==============================
+# Chatbot — Python
+# ==============================
+chatbot/__pycache__/
+chatbot/*.py[cod]
+chatbot/*.egg-info/
+chatbot/.pytest_cache/
+chatbot/.mypy_cache/
+chatbot/.ruff_cache/
+chatbot/venv/
+chatbot/.venv/
+
+# ==============================
+# IDE / editor
+# ==============================
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Logs
+# ==============================
+*.log
+logs/
+
+# ==============================
+# Docker
+# ==============================
+docker-compose.override.yml
