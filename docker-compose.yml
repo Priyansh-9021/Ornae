@@ -42,6 +42,15 @@ services:
       - "3000:3000"
     depends_on:
       - backend
+  
+  ai-processor:
+    build: ./ai-processor
+    env_file:
+      - ./ai-processor/.env
+    ports:
+      - "8001:8001"
+    depends_on:
+      - backend
 
 volumes:
   pgdata:
